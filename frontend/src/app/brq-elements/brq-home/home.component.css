@@ -1,0 +1,25 @@
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+ 
+h1 {
+  color: #009DE1;;
+  padding-left: 0;
+  font-weight: 200;
+  margin-top: 70px;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+.color-button{
+  background-color: #FE8D00;
+  border: none
+}
+
+img {
+  bottom: 0px;
+}
+

@@ -1,0 +1,48 @@
+<div class="delete-container">
+  <div class="delete-content">
+    <mat-card>
+      <mat-card-title>Excluir Usuário</mat-card-title>
+      <form>
+
+        <mat-form-field>
+          <input matInput placeholder="nome" [value]="user.name" name="name" disabled />
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="email" [value]="user.email" name="email" disabled />
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="celular" [value]="user.mobile" name="mobile" disabled />
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="cpf" [value]="user.cpf" name="cpf" disabled />
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="gênero" [value]="user.gender" name="gender" disabled />
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="data de Nascimento" [value]="user.birthDate" name="birthDate" disabled />
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="skills" [value]="user.skills" name="skills" disabled />
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="certificação" [value]="user.certification" name="certification" disabled />
+        </mat-form-field>
+
+      </form>
+      <button mat-raised-button (click)="deleteUser()" color="warn">
+        Excluir
+      </button>
+      <button mat-raised-button (click)="cancel()">Cancelar</button>
+    </mat-card>
+
+
+  </div>
+</div>

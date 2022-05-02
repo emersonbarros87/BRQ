@@ -1,0 +1,27 @@
+#button-color {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+button {
+  margin: 20px 15px 0px 0px;
+}
+
+.update-container {
+  width: 500px;
+  margin: auto;
+  height: 100%;
+}
+
+.update-content {
+  margin-top: 150px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}

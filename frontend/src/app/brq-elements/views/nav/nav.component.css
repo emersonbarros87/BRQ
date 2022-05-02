@@ -1,0 +1,36 @@
+.nav-container {
+  width: 100%;
+  background-color: #0D2137;
+
+}
+
+.top {
+  width: 1000px;
+  margin: auto;
+  align-items: center;
+  padding: 25px 0;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+#brand {
+  width: 130px;
+}
+
+li {
+  font-size: 1rem;
+  display: inline;
+  margin: 0 0 0 90px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+nav a:hover {
+  color: #FE8D00;
+}

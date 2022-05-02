@@ -1,0 +1,51 @@
+<div class="list-container">
+  <div class="List-content">
+    <mat-card>
+      <mat-card-title>Informações Usuário</mat-card-title>
+
+      <form>
+        <mat-form-field >
+          <mat-label>Nome</mat-label>
+          <input matInput [value]="user.name" name="name" disabled/>
+        </mat-form-field>
+
+        <mat-form-field >
+          <mat-label>Email</mat-label>
+          <input matInput [value]="user.email" name="email" disabled/>
+        </mat-form-field>
+  
+        <mat-form-field >
+          <mat-label>Celular</mat-label>
+          <input matInput [value]="user.mobile" name="mobile" disabled/>
+        </mat-form-field>
+  
+        <mat-form-field >
+          <mat-label>CPF</mat-label>
+          <input matInput [value]="user.cpf" name="cpf" disabled/>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Gênero</mat-label>
+          <input matInput [value]="user.gender" name="gender" disabled/>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Data de nascimento</mat-label>
+          <input matInput [value]="user.birthDate" name="birthDate" disabled/>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Skills</mat-label>
+          <input matInput [value]="user.skills" name="skills" disabled/>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Certificação</mat-label>
+          <input matInput [value]="user.certification" name="certification" disabled/>
+        </mat-form-field>
+      </form>
+      <button mat-raised-button (click)="back()">Voltar</button>
+    </mat-card>
+  
+  </div>
+</div>

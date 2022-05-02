@@ -1,0 +1,68 @@
+<div class="container">
+  <form>
+    <mat-form-field appearance="standard">
+      <mat-label>Filtro</mat-label>
+      <input matInput [formControl]="queryField" (keyup)="onSearch($event)" placeholder="Ex. nome">
+    </mat-form-field>
+  </form>
+
+  <div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataUsers">
+
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef class="text-center">Nome</th>
+        <td mat-cell *matCellDef="let element" class="text-center">{{ element.name }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="email">
+        <th mat-header-cell *matHeaderCellDef class="text-center">Email</th>
+        <td mat-cell *matCellDef="let element" class="text-center">{{ element.email }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="cpf">
+        <th mat-header-cell *matHeaderCellDef class="text-center">CPF</th>
+        <td mat-cell *matCellDef="let element" class="text-center">{{ element.cpf }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="skills">
+        <th mat-header-cell *matHeaderCellDef class="text-center">Skills</th>
+        <td mat-cell class="text-center" *matCellDef="let element">{{ element.skills }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="certification">
+        <th mat-header-cell *matHeaderCellDef class="text-center">Certificação</th>
+        <td mat-cell class="text-center" *matCellDef="let element">{{ element.certification }}</td>
+      </ng-container>
+
+      <ng-container class="more" matColumnDef="more">
+        <th mat-header-cell *matHeaderCellDef class="more text-center">Info</th>
+        <td mat-cell *matCellDef="let element" class="text-center">
+          <a mat-button routerLink="/user/user-profile/{{ element.id }}" class="action-more edit text-center">+</a>
+      </ng-container>
+
+      <ng-container matColumnDef="action">
+        <th mat-header-cell *matHeaderCellDef class="text-center action">Ação</th>
+        <td mat-cell *matCellDef="let element" class="text-center">
+          <a routerLink="/user/update/{{ element.id }}" class="edit"><i class="material-icons">edit</i></a>
+          <a routerLink="/user/delete/{{ element.id }}" class="delete"><i class="material-icons">delete</i></a>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let element; columns: displayedColumns"></tr>
+
+      <tr class="mat-row" *matNoDataRow>
+        <td class="mat-cell" colspan="4">Nenhum dado correspondente ao filtro"{{ queryField.value }}"</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <button class="float-end" mat-raised-button (click)="register()">
+        Cadastrar
+      </button>
+    </div>
+  </div>
+
+</div>

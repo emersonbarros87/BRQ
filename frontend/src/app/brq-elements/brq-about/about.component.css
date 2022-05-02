@@ -1,0 +1,26 @@
+.about-container {
+  width: 720px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  height: 100%;
+}
+
+.paragraphs {
+  text-align: justify;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.color-button{
+  margin-top: 20px;
+  background-color: #FE8D00;
+  border: none
+}

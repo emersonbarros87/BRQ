@@ -1,0 +1,108 @@
+{
+  "users": [
+    {
+      "name": "Bruce Wayne",
+      "email": "bruce@wayne.com",
+      "mobile": "11987442355",
+      "cpf": "52176756088",
+      "gender": "masculino",
+      "birthDate": "14051939",
+      "skills": [
+        " java",
+        " angular",
+        " devops",
+        " javaScript"
+      ],
+      "certification": "Microsoft Certified Fundamentals AZ-900",
+      "id": 0
+    },
+    {
+      "name": "Peter Parker",
+      "email": "peterparker@gmail.com",
+      "mobile": "63931132989",
+      "cpf": "80728289083",
+      "gender": "masculino",
+      "birthDate": "14111990",
+      "skills": [
+        " java",
+        " .net ",
+        " python"
+      ],
+      "certification": "AWS Certified Cloud Practitioner",
+      "id": 1
+    },
+    {
+      "name": "Jean Grey universo-10",
+      "email": "jean.g@outlook.com",
+      "mobile": "47988264175",
+      "cpf": "86096525059",
+      "gender": "feminino",
+      "birthDate": "25021987",
+      "skills": [
+        " php",
+        " devops",
+        " c#"
+      ],
+      "certification": "AWS Certified DevOps Engineer – Professional, Oracle Certified Professional Advanced PL/SQL.",
+      "id": 2
+    },
+    {
+      "name": "Jean Grey universo-11",
+      "email": "grey.jean@gmail.com",
+      "mobile": "77907412649",
+      "cpf": "81449204066",
+      "gender": "feminino",
+      "birthDate": "14061928",
+      "skills": [],
+      "certification": "VMware VCP-Cloud, CCIE",
+      "id": 3
+    },
+    {
+      "name": "Tony Stark",
+      "email": "stark.tony@stark.com",
+      "mobile": "57919727432",
+      "cpf": "88773918040",
+      "gender": "masculino",
+      "birthDate": "01121973",
+      "skills": [],
+      "certification": "",
+      "id": 4
+    },
+    {
+      "name": "Tony Stark universo-14",
+      "email": "tony@stark.com",
+      "mobile": "69957305334",
+      "cpf": "53651779084",
+      "gender": "masculino",
+      "birthDate": "21041987",
+      "skills": [
+        " java",
+        " angular",
+        " .net ",
+        " python",
+        " php",
+        " react",
+        " devops",
+        " c#",
+        " javaScript",
+        " kotlin"
+      ],
+      "certification": "AWS Certified Solutions Architect – Associate",
+      "id": 5
+    },
+    {
+      "name": "Tony Stark universo-77",
+      "email": "tony@tony.com",
+      "mobile": "30997531821",
+      "cpf": "80275873013",
+      "gender": "masculino",
+      "birthDate": "30051949",
+      "skills": [
+        " java",
+        " kotlin"
+      ],
+      "certification": "",
+      "id": 6
+    }
+  ]
+}

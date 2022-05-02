@@ -1,0 +1,73 @@
+.container {
+  margin-top: 70px;
+  height: 100vh;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  background-color: #0D2137;
+  width: 10% !important;
+  color: #fff;
+  align-items: center;
+}
+
+td {
+  padding: 10px 10px !important;
+}
+
+.action{
+  width: 5% !important;
+}
+
+.more {
+  width: 3% !important;
+}
+
+
+.edit > i {
+  color: #009DE1;
+}
+
+.delete > i {
+  color:#ff0000;
+}
+
+button {
+  color: white;
+  background-color: #FE8D00;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.action-more {
+  border-radius: 100px !important;
+  background-color: none;
+  color: #30b309 !important;
+  width: 10px !important;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+th.mat-header-cell:last-of-type {
+  padding: 0;
+}
+th.mat-header-cell:first-of-type {
+  padding: 0;
+}
+td.mat-column-star {
+  width: 20px;
+  padding-right: 8px;
+}
+
+
+th.mat-column-position, td.mat-column-position {
+  padding-left: 8px;
+}

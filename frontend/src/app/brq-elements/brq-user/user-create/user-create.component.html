@@ -1,0 +1,88 @@
+<div class="container register">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <h1 class="text-center mt-4">Cadastro</h1>
+
+      <form class="form row g-2 mt-4" [formGroup]="userProfileForm">
+        <div class="col-md-12">
+          <div class="form-group mb-3">
+            <label for="name" class="control-label">Nome</label>
+            <input type="text" class="form-control" formControlName="name">
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="form-group mb-3">
+            <label for="email" class="control-label">Email</label>
+            <input placeholder="name@example.com" type="email" class="form-control" formControlName="email">
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-group mb-3">
+            <label for="mobile" class="control-label">Celular</label>
+            <input type="tel" mask="(00) 00000-0000" class="form-control" formControlName="mobile">
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-group mb-3">
+            <label for="cpf" class="control-label">CPF</label>
+            <input type="text" mask="000.000.000-00" class="form-control" formControlName="cpf">
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="gender" class="control-label">Qual opção te descreve com mais exatidão?</label>
+          </div>
+          <div class="form-check form-check-inline" *ngFor="let element of genderOption">
+            <input formControlName="gender" class="form-check-input" type="radio" id="flexRadioDefault1"
+              [value]="element.value" checked>{{ element.desc }}
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-group mb-3">
+            <label for="birthDate" class="control-label">Data de Nascimento</label>
+            <input type="text" mask="d0/M0/0000" class="form-control" formControlName="birthDate">
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="form-group mb-3">
+            <label for="certification" class="control-label">Certificação</label>
+            <input type="text" class="form-control" formControlName="certification">
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <label for="skills">Skills</label>
+          <hr>
+        </div>
+        <div class="row mt-2 space-check">
+          <div class="form-check col-sm-4 mb-2" formArrayName="skills" *ngFor="let element of skills; let i = index">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input mb-2" [formControlName]="i">{{ skills[i] }}
+            </label>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <hr>
+        </div>
+
+        <div class="col-md-6 mt-3">
+          <div class="form-group mb-3 float-start">
+            <button class="btn btn-danger" (click)="cancel()">Cancelar</button>
+          </div>
+        </div>
+        <div class="col-md-6 mt-3">
+          <div class="form-group mb-3">
+            <button class="btn btn-primary color-button float-end" type="submit"
+              (click)="onConfirm()">Confirmar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

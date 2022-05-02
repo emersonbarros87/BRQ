@@ -1,0 +1,19 @@
+html, body { height: 100vh; }
+body { 
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.err {
+  background-color: #fff !important;;
+  color: #ff0000 !important;
+  font-weight: 500;
+}
+
+.mat-snack-bar-container {
+  margin-top: 15rem !important;
+  border: 2px solid #ff0000;
+}

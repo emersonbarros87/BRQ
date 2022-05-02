@@ -1,0 +1,51 @@
+<div class="update-container">
+  <div class="update-content">
+    <mat-card>
+      <mat-card-title>Alterar Informações Usuário</mat-card-title>
+      <form>
+        
+        <mat-form-field>
+          <input matInput placeholder="Nome" [(ngModel)]="user.name" name="name"/>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="Email" [(ngModel)]="user.email" name="email"/>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="Celular" [(ngModel)]="user.mobile" name="mobile"/>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="CPF" [(ngModel)]="user.cpf" name="cpf"/>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="Gênero" [(ngModel)]="user.gender" name="gender"/>
+        </mat-form-field>
+
+        
+        <mat-form-field>
+          <input matInput mask="d0/M0/0000" placeholder="Data de nascimento" [(ngModel)]="user.birthDate" name="birthDate"/>
+        </mat-form-field>
+        
+        <mat-form-field>
+          <input matInput placeholder="Skills" [(ngModel)]="user.skills" name="skills"/>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="Certificação" [(ngModel)]="user.certification" name="certification"/>
+        </mat-form-field>
+
+      </form>
+
+      <button mat-raised-button (click)="updateUser()" id="button-color">
+        Atualizar
+      </button>
+      <button mat-raised-button (click)="cancel()">Cancelar</button>
+    </mat-card>
+
+
+
+  </div>
+</div>
