@@ -14,7 +14,7 @@ export class Service {
     routeUrl: ''
   })
 
-  baseUrl = 'http://localhost:8080/users';
+  baseUrl = 'https://app-brq-backend.herokuapp.com/users';
 
   get headerData(): HeaderData {
     return this._headerData.value;
