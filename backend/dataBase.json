@@ -17,21 +17,6 @@
       "id": 0
     },
     {
-      "name": "Peter Parker",
-      "email": "peterparker@gmail.com",
-      "mobile": "63931132989",
-      "cpf": "80728289083",
-      "gender": "masculino",
-      "birthDate": "14111990",
-      "skills": [
-        " java",
-        " .net ",
-        " python"
-      ],
-      "certification": "AWS Certified Cloud Practitioner",
-      "id": 1
-    },
-    {
       "name": "Jean Grey universo-10",
       "email": "jean.g@outlook.com",
       "mobile": "47988264175",
@@ -45,17 +30,6 @@
       ],
       "certification": "AWS Certified DevOps Engineer – Professional, Oracle Certified Professional Advanced PL/SQL.",
       "id": 2
-    },
-    {
-      "name": "Jean Grey universo-11",
-      "email": "grey.jean@gmail.com",
-      "mobile": "77907412649",
-      "cpf": "81449204066",
-      "gender": "feminino",
-      "birthDate": "14061928",
-      "skills": [],
-      "certification": "VMware VCP-Cloud, CCIE",
-      "id": 3
     },
     {
       "name": "Tony Stark",

@@ -135,10 +135,10 @@ export class UserCreateComponent implements OnInit {
         this.service.showMensage('USUÁRIO CADASTRADO COM SUCESSO!')
       });
       this.userProfileForm.reset();
+      this.router.navigate(['/brq']);
     }
-    this.router.navigate(['/brq']);
   }
-
+  
   onConfirm() {
     this.validForms();
   }

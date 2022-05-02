@@ -23,15 +23,15 @@ const routes: Routes = [
     component: AboutComponent
   },
   {
-    path: 'user/create',
+    path: 'user/user-create',
     component: UserCreateComponent
   },
   {
-    path: 'user/update/:id',
+    path: 'user/user-update/:id',
     component: UserUpdateComponent
   },
   {
-    path: 'user/delete/:id',
+    path: 'user/user-delete/:id',
     component: UserDeleteComponent
   },
   {
